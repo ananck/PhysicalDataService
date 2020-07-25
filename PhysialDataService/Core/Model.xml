@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Core.Model</name>
+    </assembly>
+    <members>
+        <member name="T:Core.Model.Manufacturer">
+            <summary>
+            制造商表
+            </summary>
+        </member>
+        <member name="P:Core.Model.Manufacturer.EnglishName">
+            <summary>
+            英文名
+            </summary>
+        </member>
+        <member name="P:Core.Model.Manufacturer.FullName">
+            <summary>
+            全称
+            </summary>
+        </member>
+        <member name="P:Core.Model.Manufacturer.ShortName">
+            <summary>
+            简称
+            </summary>
+        </member>
+        <member name="T:Core.Model.Trade">
+            <summary>
+            材料商品名称表
+            </summary>
+        </member>
+        <member name="P:Core.Model.Trade.MaufactureId">
+            <summary>
+            制造商ID
+            </summary>
+        </member>
+        <member name="P:Core.Model.Trade.TradeName">
+            <summary>
+            商品名
+            </summary>
+        </member>
+        <member name="P:Core.Model.Trade.Kind">
+            <summary>
+            种类
+            </summary>
+        </member>
+        <member name="P:Core.Model.Trade.Mark">
+            <summary>
+            牌号
+            </summary>
+        </member>
+        <member name="P:Core.Model.Trade.MaterialIdentity">
+            <summary>
+            材料标示
+            </summary>
+        </member>
+    </members>
+</doc>
