@@ -3,7 +3,7 @@ using System.Threading.Tasks;
 
 namespace Core.IService
 {
-    public interface ManufacturerService : IBaseService<Manufacturer>
+    public interface IManufacturerService : IBaseService<Manufacturer>
     {
        // Task<bool> UOW(Manufacturer student, Teacher teacher);
     }

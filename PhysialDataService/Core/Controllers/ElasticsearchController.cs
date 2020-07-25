@@ -15,11 +15,13 @@ namespace Core.Controllers
     [Description("物性库接口")]
     public class ElasticsearchController : ControllerBase
     {
-        private readonly ManufacturerService studentService;
+        private readonly IManufacturerService _manufacturerService;
+        private readonly ITradeService _tradeService;
 
-        public ElasticsearchController(ManufacturerService studentService)
+        public ElasticsearchController(IManufacturerService studentService, ITradeService tradeService)
         {
-            this.studentService = studentService;
+            _manufacturerService = studentService;
+            _tradeService = tradeService;
         }
 
         [HttpPost]
@@ -37,7 +39,7 @@ namespace Core.Controllers
                         ShortName = l.ShortName,
                         EnglishName = l.EnglishName
                     };
-                    await studentService.Insert(manufacturer);
+                    await _manufacturerService.Insert(manufacturer);
                     resultList.Add(manufacturer);
                 }
 
@@ -52,21 +54,23 @@ namespace Core.Controllers
 
         [HttpPost]
         [Description("批量新增材料商品名称")]
-        public async Task<string> batchInsertCommodity(List<ManufacturerModel> list)
+        public async Task<string> batchInsertCommodity(List<TradeModel> list)
         {
             try
             {
-                var resultList = new List<Manufacturer>();
+                var resultList = new List<Trade>();
                 foreach (var l in list)
                 {
-                    var manufacturer = new Manufacturer
+                    var trade = new Trade
                     {
-                        FullName = l.FullName,
-                        ShortName = l.ShortName,
-                        EnglishName = l.EnglishName
+                        MaufactureId = l.MaufactureId,
+                        TradeName = l.TradeName,
+                        Kind = l.Kind,
+                        Mark=l.Mark,
+                        MaterialIdentity=l.MaterialIdentity
                     };
-                    await studentService.Insert(manufacturer);
-                    resultList.Add(manufacturer);
+                    await _tradeService.Insert(trade);
+                    resultList.Add(trade);
                 }
 
 

@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace Core.Service
 {
-    public class ManufacturerService : BaseService<Manufacturer>, IService.ManufacturerService
+    public class ManufacturerService : BaseService<Manufacturer>, IService.IManufacturerService
     {
 
         public ManufacturerService(IUnitOfWork unitOfWork, IBaseRepository<Manufacturer> currentRepository) : base(unitOfWork, currentRepository)
