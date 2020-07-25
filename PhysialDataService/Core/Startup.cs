@@ -37,6 +37,7 @@ namespace Core
 
                 c.IncludeXmlComments(Path.Combine(basePath, "Core.xml"), true);
                 c.IncludeXmlComments(Path.Combine(basePath, "Model.xml"), true);
+                c.EnableAnnotations();//×¢ÊÍ
             });
 
             services.AddDbContext<MyDbContext>(options => options.UseMySQL(Configuration["ConnectionStrings:MySql"]));

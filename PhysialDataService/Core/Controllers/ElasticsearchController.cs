@@ -4,6 +4,7 @@ using Core.IService.ViewModel;
 using Core.Model;
 using Microsoft.AspNetCore.Mvc;
 using System;
+using System.Collections.Generic;
 using System.ComponentModel;
 using System.Threading.Tasks;
 
@@ -21,21 +22,27 @@ namespace Core.Controllers
             this.studentService = studentService;
         }
 
-        [Description("批量新增材料制造商接口")]
         [HttpPost]
-        public async Task<string> BatchInsertManufacture([FromForm] ManufacturerModel model)
+        [Description("批量新增材料制造商接口")]
+        public async Task<string> BatchInsertManufacture(List<ManufacturerModel> list)
         {
             try
             {
-                var manufacturer = new Manufacturer
+                var resultList = new List<Manufacturer>();
+                foreach (var l in list)
                 {
-                    FullName=model.FullName,
-                    ShortName=model.ShortName,
-                    EnglishName=model.EnglishName
-                };
-                await studentService.Insert(manufacturer);
+                    var manufacturer = new Manufacturer
+                    {
+                        FullName = l.FullName,
+                        ShortName = l.ShortName,
+                        EnglishName = l.EnglishName
+                    };
+                    await studentService.Insert(manufacturer);
+                    resultList.Add(manufacturer);
+                }
 
-                return new Response().ToJson();
+
+                return new Response() { data= resultList }.ToJson();
             }
             catch (Exception e)
             {
@@ -43,6 +50,32 @@ namespace Core.Controllers
             }
         }
 
-       
+        [HttpPost]
+        [Description("批量新增材料商品名称")]
+        public async Task<string> batchInsertCommodity(List<ManufacturerModel> list)
+        {
+            try
+            {
+                var resultList = new List<Manufacturer>();
+                foreach (var l in list)
+                {
+                    var manufacturer = new Manufacturer
+                    {
+                        FullName = l.FullName,
+                        ShortName = l.ShortName,
+                        EnglishName = l.EnglishName
+                    };
+                    await studentService.Insert(manufacturer);
+                    resultList.Add(manufacturer);
+                }
+
+
+                return new Response() { data = resultList }.ToJson();
+            }
+            catch (Exception e)
+            {
+                return new Response() { code = 500, msg = e.Message }.ToJson();
+            }
+        }
     }
 }
