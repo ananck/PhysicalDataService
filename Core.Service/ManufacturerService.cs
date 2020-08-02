@@ -9,9 +9,8 @@ namespace Core.Service
     {
 
         public ManufacturerService(IUnitOfWork unitOfWork, IBaseRepository<Manufacturer> currentRepository) : base(unitOfWork, currentRepository)
-
         {
-
+            
         }
 
         //public async Task<bool> UOW(Manufacturer student, Teacher teacher)

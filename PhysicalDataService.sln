@@ -17,6 +17,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Core.Repository", "Core.Rep
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Core.Service", "Core.Service\Core.Service.csproj", "{AD18AC5E-DF9D-4EAF-88D4-E72BCBFA769C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhysicalDataService.Test", "PhysicalDataService.Test\PhysicalDataService.Test.csproj", "{33F21881-1D42-4A06-A9F8-284BC453D924}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{AD18AC5E-DF9D-4EAF-88D4-E72BCBFA769C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AD18AC5E-DF9D-4EAF-88D4-E72BCBFA769C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AD18AC5E-DF9D-4EAF-88D4-E72BCBFA769C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{33F21881-1D42-4A06-A9F8-284BC453D924}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33F21881-1D42-4A06-A9F8-284BC453D924}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33F21881-1D42-4A06-A9F8-284BC453D924}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33F21881-1D42-4A06-A9F8-284BC453D924}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

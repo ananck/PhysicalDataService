@@ -4,6 +4,161 @@
         <name>Core.Model</name>
     </assembly>
     <members>
+        <member name="T:Core.Model.PhysicalDataSpiderData.MoldingConditionsInfo">
+             <summary>
+            成型条件信息
+             </summary>
+        </member>
+        <member name="P:Core.Model.PhysicalDataSpiderData.MoldingConditionsInfo.ConditionsInfoName">
+            <summary>
+            成型条件名称
+            </summary>
+        </member>
+        <member name="P:Core.Model.PhysicalDataSpiderData.MoldingConditionsInfo.RecommendedValue">
+            <summary>
+            建议之
+            </summary>
+        </member>
+        <member name="P:Core.Model.PhysicalDataSpiderData.MoldingConditionsInfo.Unit">
+            <summary>
+            单位
+            </summary>
+        </member>
+        <member name="T:Core.Model.PhysicalDataSpiderData.PhysicalInfo">
+            <summary>
+            物性信息
+            </summary>
+        </member>
+        <member name="P:Core.Model.PhysicalDataSpiderData.PhysicalInfo.TypeName">
+            <summary>
+            物性类型名称
+            </summary>
+        </member>
+        <member name="P:Core.Model.PhysicalDataSpiderData.PhysicalInfo.condition">
+            <summary>
+            条件
+            </summary>
+        </member>
+        <member name="P:Core.Model.PhysicalDataSpiderData.PhysicalInfo.TestStandard">
+            <summary>
+            测试标准
+            </summary>
+        </member>
+        <member name="P:Core.Model.PhysicalDataSpiderData.PhysicalInfo.Data">
+            <summary>
+            数据
+            </summary>
+        </member>
+        <member name="P:Core.Model.PhysicalDataSpiderData.PhysicalInfo.Company">
+            <summary>
+            单位
+            </summary>
+        </member>
+        <member name="T:Core.Model.PhysicalDataSpiderData.ProductInfo">
+            <summary>
+            产品信息
+            </summary>
+        </member>
+        <member name="P:Core.Model.PhysicalDataSpiderData.ProductInfo.ProductDescription">
+            <summary>
+            产品描述
+            </summary>
+        </member>
+        <member name="P:Core.Model.PhysicalDataSpiderData.ProductInfo.MaterialIdentification">
+            <summary>
+            材料标示
+            </summary>
+        </member>
+        <member name="P:Core.Model.PhysicalDataSpiderData.ProductInfo.ULFileNumber">
+            <summary>
+            UL档案号
+            </summary>
+        </member>
+        <member name="P:Core.Model.PhysicalDataSpiderData.ProductInfo.OtherCertificates">
+            <summary>
+            其他证书
+            </summary>
+        </member>
+        <member name="P:Core.Model.PhysicalDataSpiderData.ProductInfo.Purpose">
+            <summary>
+            用途
+            </summary>
+        </member>
+        <member name="P:Core.Model.PhysicalDataSpiderData.ProductInfo.MaterialProperties">
+            <summary>
+            材料特性
+            </summary>
+        </member>
+        <member name="P:Core.Model.PhysicalDataSpiderData.ProductInfo.MaterialShape">
+            <summary>
+            材料形状
+            </summary>
+        </member>
+        <member name="T:Core.Model.PhysicalDataSpiderData.SpiderDataInfo">
+            <summary>
+            牌号信息
+            </summary>
+        </member>
+        <member name="P:Core.Model.PhysicalDataSpiderData.SpiderDataInfo.MakerShortName">
+            <summary>
+            简称
+            </summary>
+        </member>
+        <member name="P:Core.Model.PhysicalDataSpiderData.SpiderDataInfo.MakerEnglishName">
+            <summary>
+            英文名
+            </summary>
+        </member>
+        <member name="P:Core.Model.PhysicalDataSpiderData.SpiderDataInfo.MakerFullName">
+            <summary>
+            全称
+            </summary>
+        </member>
+        <member name="P:Core.Model.PhysicalDataSpiderData.SpiderDataInfo.CommodityClass">
+            <summary>
+            商品种类
+            </summary>
+        </member>
+        <member name="P:Core.Model.PhysicalDataSpiderData.SpiderDataInfo.TradeName">
+            <summary>
+            商品名
+            </summary>
+        </member>
+        <member name="P:Core.Model.PhysicalDataSpiderData.SpiderDataInfo.kind">
+            <summary>
+            种类
+            </summary>
+        </member>
+        <member name="P:Core.Model.PhysicalDataSpiderData.SpiderDataInfo.Mark">
+            <summary>
+            牌号
+            </summary>
+        </member>
+        <member name="P:Core.Model.PhysicalDataSpiderData.SpiderDataInfo.MaterialIdentity">
+            <summary>
+            材料标识
+            </summary>
+        </member>
+        <member name="P:Core.Model.PhysicalDataSpiderData.SpiderDataInfo.BrandNumberInfo">
+            <summary>
+            牌号
+            </summary>
+        </member>
+        <member name="P:Core.Model.PhysicalDataSpiderData.SpiderDataInfo.ProductInfo">
+            <summary>
+            产品信息
+            </summary>
+        </member>
+        <member name="P:Core.Model.PhysicalDataSpiderData.SpiderDataInfo.PhysicalInfos">
+            <summary>
+            物性信息列表
+            </summary>
+        </member>
+        <member name="P:Core.Model.PhysicalDataSpiderData.SpiderDataInfo.MoldingConditionsInfos">
+            <summary>
+            成型信息列表
+            </summary>
+        </member>
         <member name="T:Core.Model.Manufacturer">
             <summary>
             制造商表

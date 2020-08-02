@@ -17,4 +17,8 @@
     <PackageReference Include="MySql.Data.EntityFrameworkCore" Version="8.0.20" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="新文件夹\" />
+  </ItemGroup>
+
 </Project>
