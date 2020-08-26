@@ -2,32 +2,30 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Core.Model.PhysicalDataSpiderData
+namespace Core.Model.SaveModel
 {
-    /// <summary>
-    /// 物性信息
-    /// </summary>
-    public class PhysicalInfo
+    
+    public class machinePropertie
     {
         /// <summary>
-        /// 物性类型名称
+        /// 属性名称
         /// </summary>
-        public string TypeName { get; set; }
+        public string propertyName { get; set; }
         /// <summary>
         /// 条件
         /// </summary>
-        public string Condition { get; set; }
+        public string condition { get; set; }
         /// <summary>
         /// 测试标准
         /// </summary>
-        public string TestStandard { get; set; }
+        public string testingStandard { get; set; }
         /// <summary>
         /// 数据
         /// </summary>
-        public string Data { get; set; }
+        public string data { get; set; }
         /// <summary>
         /// 单位
         /// </summary>
-        public string Unit { get; set; }
+        public string unit { get; set; }
     }
 }

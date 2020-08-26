@@ -18,7 +18,7 @@ namespace Core.Model
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
 
-         
+
 
             modelBuilder.Entity<Manufacturer>(entity =>
             {

@@ -4,6 +4,11 @@
         <name>Core.Model</name>
     </assembly>
     <members>
+        <member name="T:Core.Model.LocationRecords">
+            <summary>
+            位置记录
+            </summary>
+        </member>
         <member name="T:Core.Model.PhysicalDataSpiderData.MoldingConditionsInfo">
              <summary>
             成型条件信息
@@ -34,7 +39,7 @@
             物性类型名称
             </summary>
         </member>
-        <member name="P:Core.Model.PhysicalDataSpiderData.PhysicalInfo.condition">
+        <member name="P:Core.Model.PhysicalDataSpiderData.PhysicalInfo.Condition">
             <summary>
             条件
             </summary>
@@ -49,7 +54,7 @@
             数据
             </summary>
         </member>
-        <member name="P:Core.Model.PhysicalDataSpiderData.PhysicalInfo.Company">
+        <member name="P:Core.Model.PhysicalDataSpiderData.PhysicalInfo.Unit">
             <summary>
             单位
             </summary>
@@ -134,14 +139,24 @@
             牌号
             </summary>
         </member>
+        <member name="P:Core.Model.PhysicalDataSpiderData.SpiderDataInfo.Color">
+            <summary>
+            颜色
+            </summary>
+        </member>
+        <member name="P:Core.Model.PhysicalDataSpiderData.SpiderDataInfo.Purpose">
+            <summary>
+            用途
+            </summary>
+        </member>
+        <member name="P:Core.Model.PhysicalDataSpiderData.SpiderDataInfo.FileNumber">
+            <summary>
+            档案号
+            </summary>
+        </member>
         <member name="P:Core.Model.PhysicalDataSpiderData.SpiderDataInfo.MaterialIdentity">
             <summary>
             材料标识
-            </summary>
-        </member>
-        <member name="P:Core.Model.PhysicalDataSpiderData.SpiderDataInfo.BrandNumberInfo">
-            <summary>
-            牌号
             </summary>
         </member>
         <member name="P:Core.Model.PhysicalDataSpiderData.SpiderDataInfo.ProductInfo">
@@ -157,6 +172,26 @@
         <member name="P:Core.Model.PhysicalDataSpiderData.SpiderDataInfo.MoldingConditionsInfos">
             <summary>
             成型信息列表
+            </summary>
+        </member>
+        <member name="P:Core.Model.PhysicalDataSpiderData.SpiderDataInfo.Characteristic">
+            <summary>
+            材料特性
+            </summary>
+        </member>
+        <member name="P:Core.Model.PhysicalDataSpiderData.SpiderDataInfo.Shape">
+            <summary>
+            材料形状
+            </summary>
+        </member>
+        <member name="P:Core.Model.PhysicalDataSpiderData.SpiderDataInfo.ProcessingMethod">
+            <summary>
+            加工方法
+            </summary>
+        </member>
+        <member name="P:Core.Model.PhysicalDataSpiderData.SpiderDataInfo.DetailsUrl">
+            <summary>
+            详情URL
             </summary>
         </member>
         <member name="T:Core.Model.Manufacturer">
@@ -207,6 +242,171 @@
         <member name="P:Core.Model.Trade.MaterialIdentity">
             <summary>
             材料标示
+            </summary>
+        </member>
+        <member name="T:Core.Model.RepeatingTable">
+            <summary>
+            重复记录
+            </summary>
+        </member>
+        <member name="P:Core.Model.SaveModel.electricPropertie.propertyName">
+            <summary>
+            属性名称
+            </summary>
+        </member>
+        <member name="P:Core.Model.SaveModel.electricPropertie.condition">
+            <summary>
+            条件
+            </summary>
+        </member>
+        <member name="P:Core.Model.SaveModel.electricPropertie.testingStandard">
+            <summary>
+            测试标准
+            </summary>
+        </member>
+        <member name="P:Core.Model.SaveModel.electricPropertie.data">
+            <summary>
+            数据
+            </summary>
+        </member>
+        <member name="P:Core.Model.SaveModel.electricPropertie.unit">
+            <summary>
+            单位
+            </summary>
+        </member>
+        <member name="P:Core.Model.SaveModel.flamePropertie.propertyName">
+            <summary>
+            属性名称
+            </summary>
+        </member>
+        <member name="P:Core.Model.SaveModel.flamePropertie.condition">
+            <summary>
+            条件
+            </summary>
+        </member>
+        <member name="P:Core.Model.SaveModel.flamePropertie.testingStandard">
+            <summary>
+            测试标准
+            </summary>
+        </member>
+        <member name="P:Core.Model.SaveModel.flamePropertie.data">
+            <summary>
+            数据
+            </summary>
+        </member>
+        <member name="P:Core.Model.SaveModel.flamePropertie.unit">
+            <summary>
+            单位
+            </summary>
+        </member>
+        <member name="P:Core.Model.SaveModel.hardnessPropertie.propertyName">
+            <summary>
+            属性名称
+            </summary>
+        </member>
+        <member name="P:Core.Model.SaveModel.hardnessPropertie.condition">
+            <summary>
+            条件
+            </summary>
+        </member>
+        <member name="P:Core.Model.SaveModel.hardnessPropertie.testingStandard">
+            <summary>
+            测试标准
+            </summary>
+        </member>
+        <member name="P:Core.Model.SaveModel.hardnessPropertie.data">
+            <summary>
+            数据
+            </summary>
+        </member>
+        <member name="P:Core.Model.SaveModel.hardnessPropertie.unit">
+            <summary>
+            单位
+            </summary>
+        </member>
+        <member name="P:Core.Model.SaveModel.machinePropertie.propertyName">
+            <summary>
+            属性名称
+            </summary>
+        </member>
+        <member name="P:Core.Model.SaveModel.machinePropertie.condition">
+            <summary>
+            条件
+            </summary>
+        </member>
+        <member name="P:Core.Model.SaveModel.machinePropertie.testingStandard">
+            <summary>
+            测试标准
+            </summary>
+        </member>
+        <member name="P:Core.Model.SaveModel.machinePropertie.data">
+            <summary>
+            数据
+            </summary>
+        </member>
+        <member name="P:Core.Model.SaveModel.machinePropertie.unit">
+            <summary>
+            单位
+            </summary>
+        </member>
+        <member name="P:Core.Model.SaveModel.physicsPropertie.propertyName">
+            <summary>
+            属性名称
+            </summary>
+        </member>
+        <member name="P:Core.Model.SaveModel.physicsPropertie.condition">
+            <summary>
+            条件
+            </summary>
+        </member>
+        <member name="P:Core.Model.SaveModel.physicsPropertie.testingStandard">
+            <summary>
+            测试标准
+            </summary>
+        </member>
+        <member name="P:Core.Model.SaveModel.physicsPropertie.data">
+            <summary>
+            数据
+            </summary>
+        </member>
+        <member name="P:Core.Model.SaveModel.physicsPropertie.unit">
+            <summary>
+            单位
+            </summary>
+        </member>
+        <member name="P:Core.Model.SaveModel.temperaturePropertie.propertyName">
+            <summary>
+            属性名称
+            </summary>
+        </member>
+        <member name="P:Core.Model.SaveModel.temperaturePropertie.condition">
+            <summary>
+            条件
+            </summary>
+        </member>
+        <member name="P:Core.Model.SaveModel.temperaturePropertie.testingStandard">
+            <summary>
+            测试标准
+            </summary>
+        </member>
+        <member name="P:Core.Model.SaveModel.temperaturePropertie.data">
+            <summary>
+            数据
+            </summary>
+        </member>
+        <member name="P:Core.Model.SaveModel.temperaturePropertie.unit">
+            <summary>
+            单位
+            </summary>
+        </member>
+        <member name="P:Core.Model.SqlLiteContext.RepeatingTables">
+            <summary>
+            去重表
+            </summary>
+        </member>
+        <member name="P:Core.Model.SqlLiteContext.LocationRecords">
+            <summary>
+            位置记录
             </summary>
         </member>
     </members>
